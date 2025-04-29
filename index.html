@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <title>Chuk's Catering and Decoration</title>
+</head>
+  <style>
+    .navbar-nav a {
+      display: inline-block; 
+      text-align: center;    
+      color: #000;        
+      padding: 20px 30px;     
+      border-radius: 5px;         
+      transition: 0.3s ease; 
+    }
+
+  
+    .navbar-nav a:hover {
+      background-color: gold;
+      color: #000;  
+    }
+
+        
+    .navbar-brand {
+      background: none;
+    }
+
+
+    .custom-button {
+      padding: 10px 20px;
+      margin-top: 30px;
+      border-radius: 24px;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+      position: static;
+    }
+
+    .custom-button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .custom-carousel {
+      max-width: 600px;
+      height: 400px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .custom-carousel .carousel-item {
+      height: 100%;
+    }
+
+    .custom-carousel .carousel-item img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .custom-button.active {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .custom-toggler {
+      padding: 0.25rem 0.5rem;
+    }
+
+    .custom-toggler .navbar-toggler-icon {
+      width: 20px;
+      height: 20px;
+      background-size: 100% 100%;
+      border: none;
+    }
+
+    .navbar-toggler {
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar-toggler:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:focus-visible {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .navbar-logo {
+      height: 40px;
+      width: auto;
+      padding: 0;
+      margin-bottom: 15px;
+      display: block;
+      object-fit: contain;
+    }
+
+  </style>
+          
+  <body>
+        <!-- Navbar -->
+      <nav class="navbar navbar-expand-md navbar-light d-flex justify-content-center">
+        <div class="container-xxl">
+            <a href="#intro" class="navbar-brand mb-0">  
+              <!--<img src="ChatGPT Image Apr 16, 2025, 07_38_46 AM.png" alt="Logo" class="navbar-logo">-->
+            </a>
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+  
+          <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="main-nav">
+              <ul class="navbar-nav gap-3 w-100 text-center text-md-start">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle btn btn-warning w-100 w-md-auto ps-4 pe-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Explore
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#location">
+                        Location
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#support">
+                        Support
+                      </a>
+                    </li>
+                    <li> 
+                      <a class="dropdown-item" href="#styles">
+                        Different styles of cakes
+                      </a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#account">
+                        Account details
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item ms-3">
+                  <a href="#pricing" class="btn-warning w-100 w-md-auto" style="text-decoration: none;">
+                    Pricing
+                  </a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a href="#about" class="btn-warning w-100 w-md-auto" style="text-decoration: none;">
+                    About
+                  </a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a href="#contacts" class="btn-warning w-100 w-md-auto" style="text-decoration: none;">
+                    Contacts
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+
+
+
+
+      <!--main-content-->
+    <section>
+      <div class="container-fluid img-fluid" style="background: url(African_Egg_Roll.webp) no-repeat; background-size: cover; padding-top: 70px; padding-bottom: 160px; margin-bottom: 30px;">
+        <div class="d-flex justify-content-center text-center text-light">
+          <h2 class="display-1 fw-bold" style="padding-top: 70px;">
+            Chuk's Catering
+          </h2>
+        </div>
+        <div class="d-flex justify-content-center text-center text-warning">
+          <h3 class="display-3 fw-bold">
+            and Decorations Center
+          </h3>
+        </div>
+        <div>
+          <div>
+            <h4 class="fst-none d-flex justify-content-center" style="color: #fff">
+              A legal bakery where different types of snacks varieties are made.
+            </h4>
+          </div>
+          <div>
+            <h3 class="fst-none d-flex justify-content-center" style="color: #fff;">
+              Also we have different cakes for different occasions.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+          
+      <!--other navigations-->
+    <div class="container-fluid bg-light">
+      <div class="list-group">
+        <span class="gap-3" style="display: flex; justify-content: center; padding-bottom: 25px; padding-top: -25px;">
+          <a href="#home">
+            <button class="custom-button active">
+              Home
+            </button>
+          </a>
+          <a href="cakes.html">
+            <button class="custom-button">
+              Cakes
+            </button>
+          </a>
+          <a href="#">
+            <button class="custom-button">
+              Snacks
+            </button>
+          </a>
+          <a href="#">
+            <button class="custom-button">
+              Interior Decoration
+            </button>
+          </a>
+        </span>
+      </div>
+    </div>
+
+    
+
+
+      <!--what they offer-->
+    <section  id="home" style="margin-top: 100px;">
+      <div class="container">
+        <div>
+          <div>
+            <div class="bg-light pt-5">
+              <span class="fw-bold d-flex justify-content-center" style="font-size: 30px; color: #000;">
+                <h3>
+                  What we offer!!
+                </h3>
+              </span>
+              <span class="" style="color: #000; line-height: 26px; font-weight: 600;">
+                <span style="display: flex; justify-content: center;">
+                  Welcome to our Bakery Centre your go-to spot for delicious snacks made fresh every day! We specialize <br></span> <span style="display: flex; justify-content: center;">in tasty treats like doughnuts, buns, egg rolls, pastries, and other delightful baked goods. Whether you're stopping by <br></span> <span style="display: flex; justify-content: center;">for a quick bite or picking up a sweet treat to share, we have something to satisfy every craving. Each item is <br></span> <span style="display: flex; justify-content: center;">prepared with care, using quality ingredients to ensure great taste and freshness. Our friendly staff is always ready to serve you</span> <span style="display: flex; justify-content: center;">with a smile. At our bakery, every snack brings joy, comfort, and a reason to come back for more.
+                </span>
+              </span>
+
+
+                  <!--carousel-->
+              <span>
+                <div id="carouselExampleIndicators" class="carousel slide custom-carousel mb-5">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="pexels-brent-keane-181485-1702373.jpg" class="d-block w-100" alt="Elegant white wedding cake">                      >
+                    </div>
+                    <div class="carousel-item">
+                      <img src="pexels-heyronmar-806363.jpg" class="d-block w-100" alt="normal cake for celebration" style="object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="pexels-quang-nguyen-vinh-222549-2144200.jpg" class="d-block w-100" alt="chrismas cake">
+                   </div>
+                    <div class="carousel-item">
+                      <img src="pexels-ivan-samkov-8104140.jpg" class="d-block w-100" alt="fun cake">
+                   </div>
+                   <div class="carousel-item">
+                      <img src="pexels-minan1398-724022.jpg" class="d-block w-100" alt="cup-cake">
+                   </div>
+                   <div class="carousel-item">
+                      <img src="pexels-pixabay-268364.jpg" class="d-block w-100" alt="doughnuts">
+                   </div>
+                   <div class="carousel-item">
+                      <img src="pexels-cottonbro-6053917.jpg" class="d-block w-100" alt="eggroll">
+                   </div>
+                   <div class="carousel-item">
+                      <img src="African_Egg_Roll.webp" class="d-block w-100" alt="sprinkles">
+                   </div>
+                   <div class="carousel-item">
+                      <img src="pexels-ehioma-osih-109764575-11193999.jpg" class="d-block w-100" alt="fun cake">
+                   </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </span>
+
+              <span>
+                <h6 class="text-center pb-4" style="margin-bottom: 100px;">
+                  For more designs on cakes and cupcakes vist the 'cakes' link above or click this link &nbsp;<a href="#">cakes</a>
+                </h6>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+        <!--pricing-->
+    <section id="pricing" class="bg-light mt-5 pt-5" style="margin-bottom: 100px;">
+      <div class="container-lg pb-4">
+        <div class="text-center">
+          <h2>
+            Pricing Plans
+          </h2>
+          <p class="lead text-muted">
+            Choose a pricing plan best suited for you.
+          </p>
+        </div>
+
+        <div class="row my-5 align-items-center justify-content-center g-0">
+          <div class="col-8 col-lg-4 col-xl-4">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">
+                  Snacks
+                </h4>
+                <p class="card-subtitle">
+                  With your different options.
+                </p>
+                <p class="display-5 my-4 text-warning fw-bold">
+                  &#8358;200.00
+                </p>
+                <p class="card-text mx-5 d-none d-lg-block" >
+                  Note: We only sell Dougnut, Egg roll, Buns.
+                </p>
+                <a href="#" class="btn btn-outline-warning btn-lg mt-3">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-9 col-lg-4">
+            <div class="card border-warning border-2">
+              <div class="card-header text-center">
+                Most Popular
+              </div>
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">
+                  Cakes
+                </h4>
+                <p class="card-subtitle">
+                  With different flavours of you choice.
+                </p>
+                <p class="display-4 my-4 text-warning fw-bold">
+                  &#8358;10,000.00
+                </p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Note: We don't do delivering. Details will be explained below
+                </p>
+                <a href="#" class="btn btn-outline-warning btn-lg mt-3">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-8 col-lg-4 col-xl-4">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">
+                  Interior Decoration
+                </h4>
+                <p class="card-subtitle">
+                  With different styles and decorations of your choice.
+                </p>
+                <p class="display-5 my-4 text-warning fw-bold">
+                  &#8358;20,000.00
+                </p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Note: We buy the materials for the design with your budget.
+                </p>
+                <a href="#" class="btn btn-outline-warning btn-lg mt-3">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section id="about" class="container py-5 bg-light" style="margin-bottom: 100px;">
+      <h2 class="text-center mb-4" style="font-size: 2rem;">🥐 About Us</h2>
+    
+      <p class="text-center">
+        Welcome to <strong><em>Chuk's Catering and Decoration Center</em></strong>, where tradition meets craftsmanship in every bite.
+      </p>
+    
+      <p class="text-center">
+        Our approach blends timeless baking techniques with a touch of creativity, allowing us to offer both classic favorites and unique seasonal creations. Every item is thoughtfully prepared by our skilled bakers, who bring care and consistency to everything from delicate pastries to rustic loaves.
+      </p>
+    
+      <p class="text-center">
+        Over the years, we've become a trusted part of the community — a place where quality is never compromised and every guest is welcomed with warmth. Our bakery isn't just a place to purchase baked goods; it's a space where people connect, celebrate, and enjoy life's simple pleasures.
+      </p>
+    
+      <p class="text-center">
+        Whether you're stopping by for a morning pastry, selecting a gift for someone special, or planning a custom order for a celebration, we're here to ensure your experience is both delightful and memorable.
+      </p>
+    
+      <p class="text-center">
+        We invite you to visit <strong>Chuk's Catering and Decoration Center</strong> and discover the simple joy of truly exceptional baking.
+      </p>
+    </section>
+
+        
+    
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+      
+    </script>
+  </body>
+</html>
