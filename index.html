@@ -3,130 +3,28 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <!--<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-     <title>Chuk's Catering and Decoration</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      <link rel="icon" href="redketchup/favicon.ico" type="image/x-icon">
+      <link rel="apple-touch-icon" sizes="180x180" href="redketchup/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="redketchup/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="redketchup/favicon-16x16.png">
+      <link rel="manifest" href="redketchup/site.webmanifest">
+      <title>CHUK'S Cakes and Decoration Center</title>
 </head>
-  <style>
-    .navbar-nav a {
-      display: inline-block; 
-      text-align: center;    
-      color: #000;        
-      padding: 20px 30px;     
-      border-radius: 5px;         
-      transition: 0.3s ease; 
-    }
-
-  
-    .navbar-nav a:hover {
-      background-color: gold;
-      color: #000;  
-    }
-
-        
-    .navbar-brand {
-      background: none;
-    }
-
-
-    .custom-button {
-      padding: 10px 20px;
-      margin-top: 30px;
-      border-radius: 24px;
-      border: none;
-      background-color: #000;
-      color: #fff;
-      transition: all 0.3s ease-in-out;
-      position: static;
-    }
-
-    .custom-button:hover {
-      background-color: #fff;
-      color: #000;
-    }
-
-    .custom-carousel {
-      max-width: 600px;
-      height: 400px;
-      margin: auto;
-      overflow: hidden;
-      margin-bottom: 1rem;
-    }
-
-    .custom-carousel .carousel-item {
-      height: 100%;
-    }
-
-    .custom-carousel .carousel-item img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-
-    .custom-button.active {
-      background-color: #fff;
-      color: #000;
-    }
-
-    .custom-toggler {
-      padding: 0.25rem 0.5rem;
-    }
-
-    .custom-toggler .navbar-toggler-icon {
-      width: 20px;
-      height: 20px;
-      background-size: 100% 100%;
-      border: none;
-    }
-
-    .navbar-toggler {
-      border: none;
-      box-shadow: none;
-      background-color: transparent;
-      transition: background-color 0.3s ease;
-    }
-
-    .navbar-toggler:hover {
-      background-color: rgba(0, 0, 0, 0.1);
-    }
-
-    .navbar-toggler:focus,
-    .navbar-toggler:focus-visible {
-      outline: none;
-      box-shadow: none;
-    }
-
-    .navbar-logo {
-      height: 40px;
-      width: auto;
-      padding: 0;
-      margin-bottom: 15px;
-      display: block;
-      object-fit: contain;
-    }
-
-    @media (max-width: 768px) {
-      #home {
-        margin-top: 1rem !important;
-      }
-      .custom-carousel {
-        margin-top: 1rem !important;
-        margin-bottom: 1rem !important;
-      }
-    }
-
-  </style>
           
   <body>
         <!-- Navbar -->
-      <nav class="navbar navbar-expand-md navbar-light d-flex justify-content-center">
-        <div class="container-xxl">
-            <a href="#intro" class="navbar-brand mb-0">  
-              <!--<img src="ChatGPT Image Apr 16, 2025, 07_38_46 AM.png" alt="Logo" class="navbar-logo">-->
+      <nav class="navbar navbar-expand-md navbar-light d-flex justify-content-center fixed-top" style="background-color: #fff;">
+        <div class="custom-div container-xxl" style="margin-left: 600px;">
+            <a href="https://chukscakes.netlify.app" class="navbar-brand mb-0 me-5">  
+              <img src="Assets/Canvas.png" alt="Logo" class="navbar-logo" style="width: 70px; height: auto;">
             </a>
           <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -167,7 +65,7 @@
                   </ul>
                 </li>
                 <li class="nav-item ms-3">
-                  <a href="#pricing" class="btn-warning w-100 w-md-auto" style="text-decoration: none;">
+                  <a href="#pricing" class=" btn-warning w-100 w-md-auto" style="text-decoration: none;">
                     Pricing
                   </a>
                 </li>
@@ -191,10 +89,14 @@
 
       <!--main-content-->
     <section>
-      <div class="container-fluid img-fluid" style="background: url(Assets/African_Egg_Roll.webp) no-repeat; background-size: cover; padding-top: 70px; padding-bottom: 160px; margin-bottom: 30px;">
+      <div class="background container-fluid img-fluid" style="background: url(Assets/African_Egg_Roll.webp) no-repeat;
+       background-size: cover;
+       padding-top: 70px;
+       padding-bottom: 90px;
+       margin-bottom: 30px;">
         <div class="d-flex justify-content-center text-center text-light">
-          <h2 class="display-1 fw-bold" style="padding-top: 70px;">
-            Chuk's Catering
+          <h2 class="display-1 fw-bold" style="padding-top: 70px; margin-top: 50px;">
+            Chuk's Cakes
           </h2>
         </div>
         <div class="d-flex justify-content-center text-center text-warning mt-1">
@@ -204,15 +106,18 @@
         </div>
         <div>
           <div>
-            <h4 class="fst-none d-flex justify-content-center mt-2" style="color: #fff">
-              A legal bakery where different types of snacks varieties are made.
-            </h4>
+            <h3 class="custom-text fst-none d-flex justify-content-center mt-2">
+              A bakery where different types of snacks varieties are made.
+            </h3>
           </div>
           <div>
-            <h3 class="fst-none d-flex justify-content-center mt-1" style="color: #fff;">
+            <h3 class="custom-text fst-none d-flex justify-content-center mt-1" style="color: #fff;">
               Also we have different cakes for different occasions.
             </h3>
           </div>
+        </div>
+        <div class="btn-container">
+          <button class="cool-btn">Get now!</button>
         </div>
       </div>
     </section>
@@ -348,7 +253,7 @@
           <div class="col-8 col-lg-4 col-xl-4">
             <div class="card border-0">
               <div class="card-body text-center py-4">
-                <h4 class="card-title pt-5" style="display: flex; justify-content: center; text-decoration: dotted;">
+                <h4 class="card-title pt-5" style="display: flex; justify-content: center;">
                   Snacks
                 </h4>
                 <p class="card-subtitle pt-3">
@@ -452,6 +357,63 @@
         We invite you to visit <strong>Chuk's Catering and Decoration Center</strong> and discover the simple joy of truly exceptional baking.
       </p>
     </section>
+
+
+
+    <footer style="background-color: #000;" class="text-light pt-5 pb-4">
+      <div class="container text-md-left">
+        <div class="row text-md-left">
+    
+          <!-- About -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold" style="color:gold;">Chuk's Catering</h5>
+            <p>
+              Delicious cakes and elegant decorations for all occasions. We make your events unforgettable.
+            </p>
+          </div>
+    
+          <!-- Links -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold" style="color:gold;">Quick Links</h5>
+            <p class="paragraph"><a href="#account" class="custom-link">Account details</a></p>
+            <p><a href="#pricing" class="text-light text-decoration-none">Pricing</a></p>
+            <p><a href="#about" class="text-light text-decoration-none">About</a></p>
+            <p><a href="#contact" class="text-light text-decoration-none">Contact</a></p>
+            <p><a href="#location" class="text-light text-decoration-none">Lacation</a></p>
+            <p><a href="cakes.html" class="text-light text-decoration-none">Cakes</a></p>
+            <p><a href="#support" class="text-light text-decoration-none">Support</a></p>
+          </div>
+    
+          <!-- Contact -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold" style="color:gold;">Contact</h5>
+            <p><i class="bi bi-house-door-fill"></i> Lagos, Nigeria</p>
+            <p><i class="bi bi-envelope-fill"></i> info@chukscakes.com</p>
+            <p><i class="bi bi-phone-fill"></i> +234 814 032 6204</p>
+          </div>
+    
+          <!-- Social Media -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold" style="color:gold;">Follow Us</h5>
+            <a href="#" class="text-light me-4"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light me-4"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light me-4"><i class="bi bi-whatsapp"></i></a>
+          </div>
+    
+        </div>
+    
+        <hr class="mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>© 2025 Chuk's Catering & Decoration. All rights reserved.</p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <p class="text-end">Made by Speedster Web Dev</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
 
         
     

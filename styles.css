@@ -1,0 +1,266 @@
+
+
+.navbar-nav a {
+    display: inline-block; 
+    text-align: center;    
+    color: #000;        
+    padding: 20px 30px;     
+    border-radius: 5px;         
+    transition: 0.5s; 
+}
+
+
+.navbar-nav a:hover {
+    background-color: gold;
+    color: #000;  
+}
+
+      
+.navbar-brand {
+    background: none;
+}
+
+
+
+.custom-button {
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 24px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    position: static;
+}
+
+
+.custom-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.custom-carousel {
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+
+.custom-carousel .carousel-item {
+    height: 100%;
+}
+
+
+.custom-carousel .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.custom-button.active {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.custom-toggler {
+    padding: 0.25rem 0.5rem;
+}
+
+
+
+.custom-toggler .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    border: none;
+}
+
+
+
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+
+.navbar-toggler:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+
+.navbar-logo {
+    height: 40px;
+    width: auto;
+    padding: 0;
+    margin-bottom: 15px;
+    display: block;
+    object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+    #home {
+      margin-top: 1rem !important;
+    }
+
+
+    .custom-carousel {
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+
+
+    .background {
+      padding-bottom: 406px !important;
+    }
+
+
+    .custom-div{
+      margin-left: auto !important;
+    }
+
+    .custom-text{
+        font-size: 20px;
+    }
+
+}
+
+
+.custom-text{
+    color: #fff;
+}
+
+
+.custom-link{
+    text-decoration: none;
+    color: white;
+    transition: .3s ease-in-out
+}
+
+
+.custom-link :hover{
+    color: gold;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; takes full viewport height */
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.cool-btn {
+    /* Basic styling */
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #ff3d7f, #3db0ff);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    
+    /* 3D effect on hover */
+    transform: translateY(0);
+}
+
+.cool-btn:hover {
+    /* Color change and lift effect */
+    background: linear-gradient(45deg, #3db0ff, #ff3d7f);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    
+    /* Text color pulse */
+    animation: pulse 1.5s infinite;
+}
+
+/* Ripple effect */
+.cool-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.cool-btn:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+/* Border animation */
+.cool-btn::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: linear-gradient(45deg, #ff3d7f, #3db0ff, #ff3d7f, #3db0ff);
+    background-size: 400%;
+    border-radius: 50px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.cool-btn:hover::before {
+    opacity: 1;
+    animation: animate-border 8s linear infinite;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { color: rgba(255, 255, 255, 1); }
+    50% { color: rgba(255, 255, 255, 0.7); }
+    100% { color: rgba(255, 255, 255, 1); }
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(20, 20);
+        opacity: 0;
+    }
+}
+
+@keyframes animate-border {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

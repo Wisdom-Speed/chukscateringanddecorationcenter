@@ -1,0 +1,99 @@
+.navbar-nav a {
+    display: inline-block; 
+    text-align: center;    
+    color: #000;        
+    padding: 20px 30px;     
+    border-radius: 5px;         
+    transition: 0.5s; 
+  }
+
+
+  .navbar-nav a:hover {
+    background-color: gold;
+    color: #000;  
+  }
+
+      
+  .navbar-brand {
+    background: none;
+  }
+
+  .custom-button {
+      padding: 10px 20px;
+      margin-top: 30px;
+      border-radius: 24px;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+  }
+
+
+  .custom-button:hover {
+      background-color: #fff;
+      color: #000;
+  }
+
+  
+  .custom-button.active {
+      background-color: #fff;
+      color: #000;
+  }
+
+  .custom-toggler {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    border: none;
+  }
+
+  .navbar-toggler {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar-toggler:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .navbar-logo {
+    height: 70px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    display: block;
+    object-fit: contain;
+  }@media (max-width: 768px) {
+    #home {
+      margin-top: 1rem !important;
+    }
+
+    .background {
+      padding-bottom: 490px !important;
+    }
+
+
+    .navbar-logo{
+      margin-right: 100px !important;
+    }
+
+
+    .custom-div{
+      margin-left: auto !important;
+    }
+
+
+}
+
